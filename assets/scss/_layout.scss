@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+//
+// webfont set
+// ## poppins , gmarketSans font
+
+// poppins
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-ExtraLight.eot');
+    src: url('../font/poppins/Poppins-ExtraLight.eot?#iefix') format('embedded-opentype'),
+         url('../font/poppins/Poppins-ExtraLight.svg#Poppins-ExtraLight') format('svg'),
+         url('../font/poppins/Poppins-ExtraLight.ttf') format('truetype'),
+         url('../font/poppins/Poppins-ExtraLight.woff') format('woff'),
+         url('../font/poppins/Poppins-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-ExtraBold.eot');
+    src: url('../font/poppins/Poppins-ExtraBold.eot?#iefix') format('embedded-opentype'),
+         url('../font/poppins/Poppins-ExtraBold.svg#Poppins-ExtraBold') format('svg'),
+         url('../font/poppins/Poppins-ExtraBold.ttf') format('truetype'),
+         url('../font/poppins/Poppins-ExtraBold.woff') format('woff'),
+         url('../font/poppins/Poppins-ExtraBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+// GmarketSans
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('GmarketSansTTFLight.eot');
+    src: url('../font/gmarketSans/GmarketSansTTFLight.eot?#iefix') format('embedded-opentype'),
+            url('../font/gmarketSans/GmarketSansTTFLight.svg#GmarketSansTTFLight') format('svg'),
+            url('../font/gmarketSans/GmarketSansTTFLight.ttf') format('truetype'),
+            url('../font/gmarketSans/GmarketSansTTFLight.woff') format('woff'),
+            url('../font/gmarketSans/GmarketSansTTFLight.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('GmarketSansTTFMedium.eot');
+    src: url('../font/gmarketSans/GmarketSansTTFMedium.eot?#iefix') format('embedded-opentype'),
+         url('../font/gmarketSans/GmarketSansTTFMedium.svg#GmarketSansTTFMedium') format('svg'),
+         url('../font/gmarketSans/GmarketSansTTFMedium.ttf') format('truetype'),
+         url('../font/gmarketSans/GmarketSansTTFMedium.woff') format('woff'),
+         url('../font/gmarketSans/GmarketSansTTFMedium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('GmarketSansTTFBold.eot');
+    src: url('../font/gmarketSans/GmarketSansTTFBold.eot?#iefix') format('embedded-opentype'),
+         url('../font/gmarketSans/GmarketSansTTFBold.svg#GmarketSansTTFBold') format('svg'),
+         url('../font/gmarketSans/GmarketSansTTFBold.ttf') format('truetype'),
+         url('../font/gmarketSans/GmarketSansTTFBold.woff') format('woff'),
+         url('../font/gmarketSans/GmarketSansTTFBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+html{
+    font-family:'Poppins', 'GmarketSans', sans-serif;
+    font-size: 15px;
+    font-weight:500;
+    letter-spacing: -1px;
+}
+
+
+// main section
+.section{
+    &-inner{
+        width:900px;
+        margin:0 auto;
+    }
+    &-header{
+        margin-bottom: 50px;
+    }
+    &-title{
+        font-size: 45px;
+        font-weight: 200;
+    }
+    &-body{
+
+    }
+}
+
+.about-content{
+    &__header{
+       
+    }
+    &__title{
+        font-size: 28px;
+        font-weight: 200;
+    }
+    &__body{
+
+    }
+}
