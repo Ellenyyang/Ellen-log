@@ -510,42 +510,55 @@ a {
 a:hover {
   text-decoration: underline; }
 
+a, a:hover, a:link, a:active, a:focus {
+  color: inherit; }
+
 iframe {
   overflow: hidden;
   margin: 0;
   padding: 0;
   border: 0; }
 
-/**/
 html {
   font-family: 'GmarketSans', sans-serif;
   font-size: 15px;
   font-weight: 500;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  line-height: 1.5; }
 
 .en {
   font-weight: 500; }
 
-.section {
-  min-height: 625px;
-  max-height: 950px; }
-  .section-inner {
-    width: 1100px;
-    margin: 0 auto; }
-  .section-header {
-    margin-bottom: 50px; }
-  .section-title {
-    font-family: 'Poppins' sans-serif;
-    font-size: 45px;
-    font-weight: 200; }
-  .section-intro-inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-  .section-intro-header {
-    flex-basis: 50%; }
-  .section-intro-body {
-    flex-basis: 50%; }
+.badge {
+  display: inline-block;
+  padding: 0 15px;
+  border: 1px solid #2e2e2e;
+  background-color: unset;
+  border-radius: 50em;
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 28px; }
+
+.section-inner {
+  width: 1100px;
+  margin: 0 auto; }
+.section-header {
+  margin-bottom: 50px; }
+.section-title {
+  font-family: 'Poppins' sans-serif;
+  font-size: 45px;
+  font-weight: 200; }
+.section-intro-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+.section-intro-header {
+  flex-basis: 50%; }
+.section-intro-body {
+  flex-basis: 50%; }
+
+#portfolio {
+  background-color: #ffbf0b; }
 
 .intro-title {
   font-family: 'Poppins', sans-serif;
@@ -563,6 +576,70 @@ html {
   background-color: #41436a;
   border-radius: 50em;
   padding: 20px 50px; }
+
+.portfolio-content__wrap {
+  width: 100%;
+  height: 100%; }
+.portfolio-content {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 auto; }
+.portfolio-content__img {
+  position: relative;
+  flex-basis: 50%; }
+  .portfolio-content__img .ph {
+    fill: #ffd560;
+    fill-rule: evenodd; }
+  .portfolio-content__img .works-img-bg, .portfolio-content__img .works-img {
+    position: absolute; }
+  .portfolio-content__img .works-img-bg {
+    z-index: 5; }
+  .portfolio-content__img .works-img {
+    z-index: 10;
+    width: 340px !important;
+    text-align: center;
+    top: 50%;
+    left: 2vw;
+    transform: translateY(-50%); }
+.portfolio-content__desc {
+  flex-basis: 50%; }
+
+.works-desc {
+  color: #2e2e2e;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgba(65, 67, 106, 0.3); }
+  .works-desc .service-name {
+    font-size: 38px;
+    font-weight: 500; }
+  .works-desc .service-exp {
+    margin-top: 15px;
+    font-size: 17px;
+    opacity: 0.7;
+    font-weight: 300; }
+.works-info {
+  padding-top: 25px;
+  color: #41436a; }
+.works-info__group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 14px; }
+  .works-info__group:not(:first-child) {
+    margin-top: 10px; }
+  .works-info__group dt {
+    flex-basis: 100px;
+    word-break: keep-all;
+    font-weight: 500; }
+  .works-info__group dd {
+    margin-left: 10px;
+    opacity: 0.7;
+    font-weight: 300; }
+  .works-info__group dd span {
+    margin: 0 5px; }
+  .works-info__group dd a:hover {
+    color: #f54768;
+    font-weight: 500; }
 
 .about-content__wrap {
   display: flex;
@@ -595,9 +672,15 @@ html {
     margin-top: 10px; }
   .work-line dt {
     flex-basis: 100px;
-    word-break: keep-all; }
+    word-break: keep-all;
+    font-weight: 500; }
   .work-line dd {
-    margin-left: 10px; }
+    margin-left: 10px;
+    opacity: 0.7;
+    font-weight: 300; }
+  .work-line .work-period {
+    margin-top: 3px;
+    color: #777; }
 
 .contact-info {
   display: flex;
@@ -609,9 +692,12 @@ html {
     margin-top: 10px; }
   .contact-info dt {
     flex-basis: 100px;
-    word-break: keep-all; }
+    word-break: keep-all;
+    font-weight: 500; }
   .contact-info dd {
-    margin-left: 10px; }
+    margin-left: 10px;
+    opacity: 0.7;
+    font-weight: 300; }
 
 .favorite-item {
   text-align: center; }
@@ -625,6 +711,11 @@ html {
     font-size: 23px;
     margin-top: 20px;
     color: #41436a; }
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: visible;
+  -webkit-transform: translate3d(0, 0, 0); }
 
 .invisible {
   position: absolute !important;
