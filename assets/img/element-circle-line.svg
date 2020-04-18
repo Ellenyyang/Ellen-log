@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="214" height="214" viewBox="0 0 214 214">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ffbf0b;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <circle id="타원_1" data-name="타원 1" class="cls-1" cx="107" cy="107" r="107"/>
+</svg>

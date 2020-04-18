@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* _reset.scss */
+
+html { font-size: 15px; background: #fff; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+body { /*font-family: $font-family;*/ font-size: 15px; font-weight: 400; line-height: 1.42857143; letter-spacing: -0.45px; }
+input, button, select, textarea { font-family: inherit; font-size: inherit; line-height: inherit;}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0; 
+    vertical-align: baseline; 
+    box-sizing:border-box;
+}
+// Set html5 elements to block
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,main,nav,section,summary{display:block;}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,font,img,ins,q,s,samp,strike,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend{border:0 none; margin:0; padding:0; /*line-height:1.5;*/}
+body{position:relative;word-break:break-all;-ms-text-size-adjust:100%;text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+header,h1{font-size:100%;}
+//html,body{height:100%;}
+caption,legend{position:absolute;top:-9999px;left:-9999px;visibility:hidden;width:0;height:0;font-size:0;overflow:hidden;}
+caption{display:none;}
+img{vertical-align:top;border:none;}
+select,input{vertical-align:top;border:0px;border-radius:0;background-color:transparent;box-shadow: none;}
+hr{display:none;border:0 none;}
+ol,ul,ul li{list-style:none;padding:0;margin:0;}
+dl, dt, dd{padding:0; margin:0;}
+em{font-style:normal;}
+menu li{list-style:none;}
+address{font-style:normal;display:inline;}
+button{cursor:pointer;border:0px;border-radius:0;background-color:transparent;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+button:active{ outline:none;}
+//button:focus{ outline:none;}
+table{border-spacing:0;border-collapse:collapse;}
+input,textarea,keygen,select,button{ /*font-family:$font-family;*/ }
+strong{font-weight: $font-weight-ko-bold;}
+dfn{font-style:normal;}
+// Link Style
+a,a:hover,a:link,a:visited,a:active,a:focus{text-decoration:none;/*color:inherit;*/cursor:pointer;}
+a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px;}
+// Forms
+fieldset{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+select,input[type=radio],input[type=submit],input[type=search]{cursor:pointer;border:0px;-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+select::-ms-expand {display:none;}
+input:focus,button:focus,textarea:focus{}
+select,div{}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button,input[type=date]::-webkit-inner-spin-button,input[type=date]::-webkit-outer-spin-button{ -webkit-appearance: none; margin: 0;}
+input[type=date]::-webkit-calendar-picker-indicator {color:transparent;background:none;z-index:1;}
+textarea{width:100%;border:none;background:none;resize: none;color:inherit;}
+// heading
+h1,h2,h3,h4,h5,h6{margin:0;font-weight:normal;}
+img{max-width:100%;height:auto;vertical-align:top;-ms-interpolation-mode:bicubic;}
+small{font-size:88%;font-weight:400; color:inherit;}
