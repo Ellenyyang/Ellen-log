@@ -7,28 +7,11 @@
     <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="../assets/css/fullpage.min.css">
     <link rel="stylesheet" href="../assets/scss/main.css">
-    <script src="../assets/js/jquery-1.12.4.min.js"></script>
-    <script src="../assets/js/fullpage.min.js"></script>
-    <script src="../assets/js/owl.carousel.min.js"></script>
     <title>웹퍼블리셔 양경배 포트폴리오</title>
 </head>
 <body>
-  <script>
-    $(document).ready(function() {
-        $('#fullpage').fullpage({
-            //options here
-            autoScrolling:true,
-            scrollHorizontally: true
-        });
-
-        //methods
-        // $.fn.fullpage.setAllowScrolling(false);
-    });
-</script>
-<!-- fullpage -->
     <section id="fullpage" class="">
         <h1 class="invisible">본문</h1>
-
         <section id="intro" class="section">
             <div class="section-inner section-intro-inner">
                 <div class="section-intro-header">
@@ -90,53 +73,7 @@
             </div>
         </section>
         <!-- //intro -->
-
-
-        <section class="section" style="display:none;">
-            <div class="cont">
-                <div class="mouse"></div>
-                <div class="app">
-                    <div class="app__bgimg">
-                        <div class="app__bgimg-image app__bgimg-image--1">
-                        </div>
-                        <div class="app__bgimg-image app__bgimg-image--2">
-                        </div>
-                    </div>
-                    <div class="app__img">
-                        <img onmousedown="return false" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/whiteTest4.png" alt="city" />
-                    </div>
-                    
-                    <div class="app__text app__text--1">
-                        <div class="app__text-line app__text-line--4">imperdiet </div>
-                        <div class="app__text-line app__text-line--3">ut le</div>
-                        <div class="app__text-line app__text-line--2">non tincidunt </div>
-                        <div class="app__text-line app__text-line--1"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/opus-attachment.png" alt="" /></div>
-                    </div>
-                    
-                    <div class="app__text app__text--2">
-                        <div class="app__text-line app__text-line--4">habitant</div>
-                        <div class="app__text-line app__text-line--3">ut eget</div>
-                        <div class="app__text-line app__text-line--2">Nam imperdiet</div>
-                        <div class="app__text-line app__text-line--1"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/537051/opus-attachment.png" alt="" /></div>
-                    </div>
-                </div>
-                <div class="pages">
-                    <ul class='pages__list'>
-                        <li data-target='1' class='pages__item pages__item--1 page__item-active'></li>
-                        <li data-target='2' class='pages__item pages__item--2'></li>
-                    </ul>
-                </div>
-            </div>
-            <a href="https://dribbble.com/shots/2936160-Opus-Animation" target="_blank" class="icon-link">
-                <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png">
-              </a>
-              <a href="https://twitter.com/mrspok407" target="_blank" class="icon-link icon-link--twitter">
-                <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
-              </a>
-        </section>
-
         <section id="portfolio" class="section">
-            
             <div class="section-header">
                 <div class="section-inner">
                     <h1 class="section-title">
@@ -148,15 +85,14 @@
             <div class="section-body">
                 <div class="section-inner">
                     <div class="owl-carousel owl-theme portfolio-content__wrap">
-                        <div class="item portfolio-content ">
+                        <div class="item portfolio-content">
                             <div class="portfolio-content__img">
-                                
                                 <svg class="works-img-bg" xmlns="http://www.w3.org/2000/svg" width="430" height="353" viewBox="0 0 430 353">
                                     <path id="poly" data-name="poly" class="ph" d="M201.634,0.531c94.978-7.134,227.113,57.58,228.375,158.35C431.183,252.7,315.9,334.034,237.732,347.758,147.608,363.58,13.549,344.873,1.022,275.7-11.43,206.952,92.3,175.7,76.7,114.16,63.6,62.5,104.93,7.794,201.634.531Z"/>
                                 </svg>
-
                                 <img class="works-img mockup" src="../assets/img/img-works-ciderpay.png" alt="" />
                             </div>
+                            <!-- //porfolio-content__img -->
                             <div class="portfolio-content__desc">
                                 <div class="works-desc">
                                     <h2 class="service-name">사이다페이</h2>
@@ -192,16 +128,194 @@
                                     </dl>
                                 </div>
                             </div>
+                            <!-- //porfolio-content__desc -->
                         </div>
+                        <!-- //porfolio-content -->
+                        <div class="item portfolio-content">
+                            <div class="portfolio-content__img">
+                                <svg class="works-img-bg" xmlns="http://www.w3.org/2000/svg" width="430" height="353" viewBox="0 0 430 353">
+                                    <path id="poly" data-name="poly" class="ph" d="M201.634,0.531c94.978-7.134,227.113,57.58,228.375,158.35C431.183,252.7,315.9,334.034,237.732,347.758,147.608,363.58,13.549,344.873,1.022,275.7-11.43,206.952,92.3,175.7,76.7,114.16,63.6,62.5,104.93,7.794,201.634.531Z"/>
+                                </svg>
+                                <img class="works-img mockup" src="../assets/img/img-works-ciderpay.png" alt="" />
+                            </div>
+                            <!-- //porfolio-content__img -->
+                            <div class="portfolio-content__desc">
+                                <div class="works-desc">
+                                    <h2 class="service-name">페이앱라이트</h2>
+                                    <p class="service-exp">
+                                        PG결제 서비스를 제공하는 서비스로 <br/>
+                                        간편하게 결제할 수 있는 목적으로 만들었다. <br/>
+                                        사업자가 없는 개인도 사용할 수 있어 편이성이 좋습니다.
+                                    </p>
+                                </div>
+                                <div class="works-info">
+                                    <p class="badge badge-outline-primary">작업물 소개</p>
+                                    <dl class="works-info__group">
+                                        <dt>작업 프로젝트</dt>
+                                        <dd>
+                                            <span><a href="https://my.payapplite.com" target="_blank">판매점&파트너스 관리자</a></span>
+                                            <span><a href="https://payapplite.com" target="_blank">소개페이지</a></span>
+                                            <span>구매자 결제창</span>
+                                            <span>통합관리자</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="works-info__group">
+                                        <dt>언어 및 라이브러리</dt>
+                                        <dd>
+                                            <span>html</span>
+                                            <span>jsp</span>
+                                            <span>css</span>
+                                            <span>sass</span>
+                                            <span>javascript</span>
+                                            <span>jQuery</span>
+                                            <span>angular</span>
+                                            <span>bootstrap</span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <!-- //porfolio-content__desc -->
+                        </div>
+                        <!-- //porfolio-content -->
+                        <div class="item portfolio-content">
+                            <div class="portfolio-content__img">
+                                <svg class="works-img-bg" xmlns="http://www.w3.org/2000/svg" width="430" height="353" viewBox="0 0 430 353">
+                                    <path id="poly" data-name="poly" class="ph" d="M201.634,0.531c94.978-7.134,227.113,57.58,228.375,158.35C431.183,252.7,315.9,334.034,237.732,347.758,147.608,363.58,13.549,344.873,1.022,275.7-11.43,206.952,92.3,175.7,76.7,114.16,63.6,62.5,104.93,7.794,201.634.531Z"/>
+                                </svg>
+                                <img class="works-img mockup" src="../assets/img/img-works-ciderpay.png" alt="" />
+                            </div>
+                            <!-- //porfolio-content__img -->
+                            <div class="portfolio-content__desc">
+                                <div class="works-desc">
+                                    <h2 class="service-name">사이다예약</h2>
+                                    <p class="service-exp">
+                                        사이다페이를 기반으로 둔 예약관리 서비스로 <br/>
+                                        예약과 결제 관리를 간편하게 할 수 있도록 제공합니다. 
+                                    </p>
+                                </div>
+                                <div class="works-info">
+                                    <p class="badge badge-outline-primary">작업물 소개</p>
+                                    <dl class="works-info__group">
+                                        <dt>작업 프로젝트</dt>
+                                        <dd>
+                                            <span><a href="https://mybooking.ciderpay.com" target="_blank">판매점 관리자</a></span>
+                                            <span><a href="https://booking.ciderpay.com" target="_blank">소개페이지</a></span>
+                                            <span>구매자 결제창</span>
+                                            <span>통합관리자</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="works-info__group">
+                                        <dt>언어 및 라이브러리</dt>
+                                        <dd>
+                                            <span>html</span>
+                                            <span>jsp</span>
+                                            <span>css</span>
+                                            <span>sass</span>
+                                            <span>javascript</span>
+                                            <span>jQuery</span>
+                                            <span>vue.js</span>
+                                            <span>element-ui Library</span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <!-- //porfolio-content__desc -->
+                        </div>
+                        <!-- //porfolio-content -->
+                        <div class="item portfolio-content">
+                            <div class="portfolio-content__img">
+                                <svg class="works-img-bg" xmlns="http://www.w3.org/2000/svg" width="430" height="353" viewBox="0 0 430 353">
+                                    <path id="poly" data-name="poly" class="ph" d="M201.634,0.531c94.978-7.134,227.113,57.58,228.375,158.35C431.183,252.7,315.9,334.034,237.732,347.758,147.608,363.58,13.549,344.873,1.022,275.7-11.43,206.952,92.3,175.7,76.7,114.16,63.6,62.5,104.93,7.794,201.634.531Z"/>
+                                </svg>
+                                <img class="works-img mockup" src="../assets/img/img-works-ciderpay.png" alt="" />
+                            </div>
+                            <!-- //porfolio-content__img -->
+                            <div class="portfolio-content__desc">
+                                <div class="works-desc">
+                                    <h2 class="service-name">uddocs</h2>
+                                    <p class="service-exp">
+                                        공개 API, 개발사 API 문서를 공유할 수 있는 서비스로, <br/>
+                                        보기 쉽게 API 문서를 생성하고 관리할 수 있게 만들었습니다.
+                                    </p>
+                                </div>
+                                <div class="works-info">
+                                    <p class="badge badge-outline-primary">작업물 소개</p>
+                                    <dl class="works-info__group">
+                                        <dt>작업 프로젝트</dt>
+                                        <dd>
+                                            <span><a href="https://my.uddocs.net" target="_blank">api 문서 관리자</a></span>
+                                            <span><a href="https://uddocs.net/v/ciderpay" target="_blank">공개API</a></span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="works-info__group">
+                                        <dt>언어 및 라이브러리</dt>
+                                        <dd>
+                                            <span>html</span>
+                                            <span>jsp</span>
+                                            <span>css</span>
+                                            <span>sass</span>
+                                            <span>javascript</span>
+                                            <span>jQuery</span>
+                                            <span>vue.js</span>
+                                            <span>element-ui Library</span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <!-- //porfolio-content__desc -->
+                        </div>
+                        <!-- //porfolio-content -->
+                        <div class="item portfolio-content">
+                            <div class="portfolio-content__img">
+                                <svg class="works-img-bg" xmlns="http://www.w3.org/2000/svg" width="430" height="353" viewBox="0 0 430 353">
+                                    <path id="poly" data-name="poly" class="ph" d="M201.634,0.531c94.978-7.134,227.113,57.58,228.375,158.35C431.183,252.7,315.9,334.034,237.732,347.758,147.608,363.58,13.549,344.873,1.022,275.7-11.43,206.952,92.3,175.7,76.7,114.16,63.6,62.5,104.93,7.794,201.634.531Z"/>
+                                </svg>
+                                <img class="works-img mockup" src="../assets/img/img-works-ciderpay.png" alt="" />
+                            </div>
+                            <!-- //porfolio-content__img -->
+                            <div class="portfolio-content__desc">
+                                <div class="works-desc">
+                                    <h2 class="service-name">uddocs</h2>
+                                    <p class="service-exp">
+                                        공개 API, 개발사 API 문서를 공유할 수 있는 서비스로, <br/>
+                                        보기 쉽게 API 문서를 생성하고 관리할 수 있게 만들었습니다.
+                                    </p>
+                                </div>
+                                <div class="works-info">
+                                    <p class="badge badge-outline-primary">작업물 소개</p>
+                                    <dl class="works-info__group">
+                                        <dt>작업 프로젝트</dt>
+                                        <dd>
+                                            <span><a href="https://my.uddocs.net" target="_blank">API문서 관리자</a></span>
+                                            <span><a href="https://uddocs.net/v/ciderpay" target="_blank">공개 API문서</a></span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="works-info__group">
+                                        <dt>언어 및 라이브러리</dt>
+                                        <dd>
+                                            <span>html</span>
+                                            <span>jsp</span>
+                                            <span>css</span>
+                                            <span>sass</span>
+                                            <span>javascript</span>
+                                            <span>jQuery</span>
+                                            <span>vue.js</span>
+                                            <span>element-ui Library</span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <!-- //porfolio-content__desc -->
+                        </div>
+                        <!-- //porfolio-content -->
                     </div>
+                    <!-- //porfolio-content__wrap -->
                 </div>
             </div>
             <!-- //section-body -->
-
             <div class="bg-element">
                 <img src="../assets/img/element-bg-line.png" alt="" />
             </div>
-            
         </section>
         <!-- //portfolio -->
 
@@ -283,17 +397,18 @@
                                 <div class="favorite-item__wrap">
                                     <div class="favorite-item">
                                         <div class="favorite-item__shape">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="122" height="116" viewBox="0 0 122 116">
-                                                    <defs>
-                                                    <style>
-                                                        .cls-1 {
-                                                        fill: #ffbf0b;
-                                                        fill-rule: evenodd;
-                                                        }
-                                                    </style>
-                                                    </defs>
-                                                    <path id="다각형" class="cls-1" d="M121.663,69.317c-1.39,20.776-19.747,45.154-34.859,46.065-20.385,1.228-29.4-10.609-42.329-18.675C29.064,87.095,3.409,91.331.9,74.3-4.967,34.476,54.735-4.7,81.858,1.55,112.546,8.622,123,49.294,121.663,69.317Z"/>
-                                                </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="122" height="116" viewBox="0 0 122 116">
+                                                <defs>
+                                                <style>
+                                                    .cls-1 {
+                                                    fill: #ffbf0b;
+                                                    fill-rule: evenodd;
+                                                    }
+                                                </style>
+                                                </defs>
+                                                <path id="다각형" class="cls-1" d="M121.663,69.317c-1.39,20.776-19.747,45.154-34.859,46.065-20.385,1.228-29.4-10.609-42.329-18.675C29.064,87.095,3.409,91.331.9,74.3-4.967,34.476,54.735-4.7,81.858,1.55,112.546,8.622,123,49.294,121.663,69.317Z"/>
+                                            </svg>
+                                            <img class="favorite-item__svg" src="../assets/img/icon-favorite-1.svg" alt="" />
                                         </div>
                                         <p class="favorite-item__name">travle</p>
                                     </div>
@@ -310,6 +425,7 @@
                                                 </defs>
                                                 <path id="다각형" class="cls-2" d="M112.835,50.335c-1.39,20.873-19.744,50.93-34.856,58.785-18.138,9.43-36.862,5.6-49.794-2.5C12.776,96.962,1.8,78.861.8,61.592c-0.965-16.621,9.567-28.04,24.9-40.024C40.864,9.711,61.233.265,74.245,0.305,97.8,0.378,114.175,30.219,112.835,50.335Z"/>
                                               </svg>
+                                              <img class="favorite-item__svg" src="../assets/img/icon-favorite-2.svg" alt="" />
                                         </div>
                                         <p class="favorite-item__name">coffee</p>
                                     </div>
@@ -326,6 +442,7 @@
                                                 </defs>
                                                 <path id="다각형" class="cls-3" d="M110,42c10.2,22.962.524,39.45-14,53-12.262,11.439-29.87,14-45,14C22.94,109,5.016,90.805,3,73,1.125,56.441-5.473,34.649,11,12,23.1-4.633,48.08-1.33,56,9,76.8,36.127,102.864,25.932,110,42Z"/>
                                             </svg>
+                                            <img class="favorite-item__svg" src="../assets/img/icon-favorite-3.svg" alt="" />
                                         </div>
                                         <p class="favorite-item__name">writing</p>
                                     </div>
@@ -342,23 +459,25 @@
                                                 </defs>
                                                 <path id="다각형" class="cls-4" d="M110.955,66.827c-9.5,20.938-20.228,13.159-32.37,23.655-12.659,10.943-18.479,24.9-33.615,24.9-28.07,0-42.593-33.6-44.61-51.316-1.875-16.473,10.348-31.629,24.906-45.09C39.272,6.025,60.858-5.865,78.814,5.2,100.33,18.453,119.857,47.2,110.955,66.827Z"/>
                                             </svg>
+                                            <img class="favorite-item__svg" src="../assets/img/icon-favorite-4.svg" alt="" />
                                         </div>
                                         <p class="favorite-item__name">cats</p>
                                     </div>
                                     
                                     <div class="favorite-item">
                                         <div class="favorite-item__shape">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="122" height="116" viewBox="0 0 122 116">
-                                                    <defs>
-                                                    <style>
-                                                        .cls-1 {
-                                                        fill: #ffbf0b;
-                                                        fill-rule: evenodd;
-                                                        }
-                                                    </style>
-                                                    </defs>
-                                                    <path id="다각형" class="cls-1" d="M121.663,69.317c-1.39,20.776-19.747,45.154-34.859,46.065-20.385,1.228-29.4-10.609-42.329-18.675C29.064,87.095,3.409,91.331.9,74.3-4.967,34.476,54.735-4.7,81.858,1.55,112.546,8.622,123,49.294,121.663,69.317Z"/>
-                                                </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="122" height="116" viewBox="0 0 122 116">
+                                                <defs>
+                                                <style>
+                                                    .cls-1 {
+                                                    fill: #ffbf0b;
+                                                    fill-rule: evenodd;
+                                                    }
+                                                </style>
+                                                </defs>
+                                                <path id="다각형" class="cls-1" d="M121.663,69.317c-1.39,20.776-19.747,45.154-34.859,46.065-20.385,1.228-29.4-10.609-42.329-18.675C29.064,87.095,3.409,91.331.9,74.3-4.967,34.476,54.735-4.7,81.858,1.55,112.546,8.622,123,49.294,121.663,69.317Z"/>
+                                            </svg>
+                                            <img class="favorite-item__svg" src="../assets/img/icon-favorite-5.svg" alt="" />
                                         </div>
                                         <p class="favorite-item__name">songs</p>
                                     </div>
@@ -366,31 +485,33 @@
                                         <div class="favorite-item__shape">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="113" height="115" viewBox="0 0 113 115">
                                                 <defs>
-                                                  <style>
+                                                    <style>
                                                     .cls-5 {
-                                                      fill: #41436a;
-                                                      fill-rule: evenodd;
+                                                        fill: #41436a;
+                                                        fill-rule: evenodd;
                                                     }
-                                                  </style>
+                                                    </style>
                                                 </defs>
                                                 <path id="다각형" class="cls-5" d="M112.835,50.335c-1.39,20.873-19.744,50.93-34.856,58.785-18.138,9.43-36.862,5.6-49.794-2.5C12.776,96.962,1.8,78.861.8,61.592c-0.965-16.621,9.567-28.04,24.9-40.024C40.864,9.711,61.233.265,74.245,0.305,97.8,0.378,114.175,30.219,112.835,50.335Z"/>
-                                              </svg>
+                                            </svg>
+                                            <img class="favorite-item__svg" src="../assets/img/icon-favorite-6.svg" alt="" />
                                         </div>
                                         <p class="favorite-item__name">movies</p>
                                     </div>
                                     <div class="favorite-item">
                                         <div class="favorite-item__shape">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="122" height="116" viewBox="0 0 122 116">
-                                                    <defs>
-                                                    <style>
-                                                        .cls-1 {
-                                                        fill: #ffbf0b;
-                                                        fill-rule: evenodd;
-                                                        }
-                                                    </style>
-                                                    </defs>
-                                                    <path id="다각형" class="cls-1" d="M121.663,69.317c-1.39,20.776-19.747,45.154-34.859,46.065-20.385,1.228-29.4-10.609-42.329-18.675C29.064,87.095,3.409,91.331.9,74.3-4.967,34.476,54.735-4.7,81.858,1.55,112.546,8.622,123,49.294,121.663,69.317Z"/>
-                                                </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="122" height="116" viewBox="0 0 122 116">
+                                                <defs>
+                                                <style>
+                                                    .cls-1 {
+                                                    fill: #ffbf0b;
+                                                    fill-rule: evenodd;
+                                                    }
+                                                </style>
+                                                </defs>
+                                                <path id="다각형" class="cls-1" d="M121.663,69.317c-1.39,20.776-19.747,45.154-34.859,46.065-20.385,1.228-29.4-10.609-42.329-18.675C29.064,87.095,3.409,91.331.9,74.3-4.967,34.476,54.735-4.7,81.858,1.55,112.546,8.622,123,49.294,121.663,69.317Z"/>
+                                            </svg>
+                                            <img class="favorite-item__svg" src="../assets/img/icon-favorite-7.svg" alt="" />
                                         </div>
                                         <p class="favorite-item__name">play&musical</p>
                                     </div>
@@ -417,6 +538,21 @@
 
     </section>
 
+    <script src="../assets/js/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/fullpage.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                //options here
+                autoScrolling:true,
+                scrollHorizontally: true
+            });
+    
+            //methods
+            // $.fn.fullpage.setAllowScrolling(false);
+        });
+    </script>
     <script>
         $('.owl-carousel').owlCarousel({
         loop:true,

@@ -514,11 +514,17 @@ html{
             span{
                 margin: 0 5px;
             }
-
+            a {
+                color:#41436a;
+            }
             a:hover{
                 color:#fff;
                 font-weight:500;
             }
+
+
+
+
         }
     }
 }
@@ -582,7 +588,17 @@ html{
         justify-content: space-evenly;
     }
 
-    &__shape{}
+    &__shape{
+        position:relative;
+    }
+
+    &__svg{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        height:45px;
+    }
 
     &__name{
         font-family:'Poppins' sans-serif;

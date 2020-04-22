@@ -938,6 +938,8 @@ html {
     word-break: keep-all; }
     .works-info__group dd span {
       margin: 0 5px; }
+    .works-info__group dd a {
+      color: #41436a; }
     .works-info__group dd a:hover {
       color: #fff;
       font-weight: 500; }
@@ -1005,6 +1007,14 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; }
+  .favorite-item__shape {
+    position: relative; }
+  .favorite-item__svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 45px; }
   .favorite-item__name {
     font-family: 'Poppins' sans-serif;
     font-weight: 200;
