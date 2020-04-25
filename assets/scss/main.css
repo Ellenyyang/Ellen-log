@@ -667,6 +667,9 @@ table {
   font-weight: 700;
   font-style: normal; }
 /**/
+html {
+  overflow-x: hidden; }
+
 body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, select, table, td, textarea, th, ul {
   margin: 0;
   padding: 0; }
@@ -876,7 +879,8 @@ html {
     left: 2vw;
     transform: translateY(-50%); }
 .portfolio-content__desc {
-  flex-basis: 50%; }
+  flex-basis: 50%;
+  background-color: #ffbf0b; }
 
 .works-desc {
   color: #2e2e2e;
@@ -1231,6 +1235,38 @@ html {
   .icon-link--twitter {
     left: auto;
     right: 5px; }
+
+.owl-carousel .owl-dots {
+  position: absolute;
+  top: -30px; }
+
+.owl-carousel .owl-dots {
+  position: absolute;
+  top: -35px; }
+.owl-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px; }
+  .owl-carousel .owl-dot button {
+    padding: 3px;
+    font-size: 17px;
+    opacity: 0.3; }
+  .owl-carousel .owl-dot.active button, .owl-carousel .owl-dot:hover button {
+    opacity: 1;
+    border-bottom: 1px solid #2e2e2e; }
+
+.fiexed-section {
+  position: fixed;
+  top: 0; }
+
+.load {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  z-index: 100; }
 
 .invisible {
   position: absolute !important;
