@@ -749,15 +749,18 @@ html {
   width: 100%;
   padding: 0 7%; }
 .section-header {
-  margin-bottom: 50px; }
+  margin-bottom: 8vh; }
 .section-title {
-  font-family: 'Poppins' sans-serif;
-  font-size: 45px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
   font-weight: 200; }
 .section-intro-header {
   text-align: center; }
 .section-intro-body {
   margin-top: 50px; }
+@media screen and (min-width: 720px) {
+  .section-title {
+    font-size: 36px; } }
 @media screen and (min-width: 960px) {
   .section {
     position: relative;
@@ -767,8 +770,10 @@ html {
     display: flex;
     align-items: center; }
   .section-inner {
-    max-width: 1100px;
+    max-width: 1440px;
     margin: 0 auto; }
+  .section-title {
+    font-size: 45px; }
   .section-intro-inner {
     display: flex;
     flex-wrap: wrap;
@@ -780,6 +785,9 @@ html {
   .section-intro-body {
     flex-basis: 50%;
     margin-top: 0; } }
+@media screen and (min-width: 1521px) {
+  .section-inner {
+    padding: 0; } }
 
 #portfolio {
   background-color: #ffbf0b; }
@@ -791,9 +799,6 @@ html {
       width: 100%;
       opacity: 0.7; }
 
-#about-me .section-header {
-  margin-bottom: 15px; }
-
 #footer {
   background-color: #ffbf0b;
   overflow: visible;
@@ -803,7 +808,7 @@ html {
 #footer .footer-inner {
   padding: 9px; }
   #footer .footer-inner {
-    max-width: 1100px;
+    max-width: 1440px;
     margin: 0 auto; }
   #footer .footer-inner .copyright {
     text-align: center;
@@ -870,7 +875,7 @@ html {
 .intro-imgs {
   position: relative;
   text-align: center;
-  width: 100%;
+  width: 85%;
   margin: 0 auto; }
   .intro-imgs #charactor-illust {
     width: 100%; }
@@ -889,7 +894,7 @@ html {
   bottom: 70px;
   left: -35px;
   z-index: -1;
-  width: 150px; }
+  width: 110px; }
 .intro-imgs-element4 {
   bottom: 0;
   left: -35px; }
@@ -938,7 +943,9 @@ html {
     display: block; }
   .intro-title {
     width: 100%;
-    text-align: left; }
+    max-width: 530px;
+    text-align: left;
+    margin: 0; }
   .intro-imgs {
     width: 100%; }
     .intro-imgs #charactor-illust {
@@ -999,7 +1006,7 @@ html {
       position: absolute; }
     .portfolio-content__img .works-img-bg {
       z-index: 5;
-      width: 430px;
+      width: 400px;
       height: 353px; }
     .portfolio-content__img .works-img {
       z-index: 10;
@@ -1011,17 +1018,22 @@ html {
   .portfolio-content__desc {
     flex-basis: 50%;
     margin-top: 0; } }
+@media screen and (min-width: 1281px) {
+  .portfolio-content__img .works-img-bg {
+    width: 430px; }
+  .portfolio-content__desc {
+    flex-basis: 60%; } }
 
 .works-desc {
   color: #2e2e2e;
   padding-bottom: 25px;
   border-bottom: 1px solid rgba(65, 67, 106, 0.3); }
   .works-desc .service-name {
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 500; }
   .works-desc .service-exp {
     margin-top: 7px;
-    font-size: 15px;
+    font-size: 13px;
     opacity: 0.7;
     font-weight: 300; }
 .works-info {
@@ -1031,7 +1043,7 @@ html {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  font-size: 14px; }
+  font-size: 13px; }
   .works-info__group:not(:first-child) {
     margin-top: 10px; }
   .works-info__group dt {
@@ -1043,12 +1055,16 @@ html {
     margin-left: 10px;
     opacity: 0.7;
     font-weight: 300; }
+    .works-info__group dd a {
+      color: #2e2e2e; }
   .works-info__group dd {
     word-break: keep-all; }
     .works-info__group dd span {
       margin: 0 5px; }
+      .works-info__group dd span i {
+        transform: translateY(-5px); }
     .works-info__group dd a {
-      color: #41436a; }
+      color: #2e2e2e; }
     .works-info__group dd a:hover {
       color: #fff;
       font-weight: 500; }
@@ -1076,7 +1092,7 @@ html {
 .about-content__header {
   margin-bottom: 20px; }
 .about-content__title {
-  font-family: 'Poppins' sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 28px;
   font-weight: 200; }
 @media screen and (min-width: 960px) {
@@ -1094,15 +1110,15 @@ html {
       flex-basis: 50%;
       border-top: 0; }
     .about-content:nth-child(3) {
-      padding-top: 30px;
-      margin-top: 30px;
+      padding-top: 5vh;
+      margin-top: 5vh;
       flex-basis: 100%; } }
 
 .work-line {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  font-size: 14px; }
+  font-size: 13px; }
   .work-line:not(:first-child) {
     margin-top: 10px; }
   .work-line dt {
@@ -1114,6 +1130,8 @@ html {
     margin-left: 10px;
     opacity: 0.7;
     font-weight: 300; }
+    .work-line dd a {
+      color: #2e2e2e; }
   .work-line .work-period {
     margin-top: 3px;
     color: #777; }
@@ -1122,7 +1140,7 @@ html {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  font-size: 14px; }
+  font-size: 13px; }
   .contact-info:not(:first-child) {
     margin-top: 10px; }
   .contact-info dt {
@@ -1134,6 +1152,8 @@ html {
     margin-left: 10px;
     opacity: 0.7;
     font-weight: 300; }
+    .contact-info dd a {
+      color: #2e2e2e; }
 
 .favorite-item {
   text-align: center;
@@ -1141,7 +1161,7 @@ html {
 .favorite-item__wrap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly; }
+  justify-content: space-between; }
 .favorite-item__shape {
   position: relative; }
   .favorite-item__shape svg {
@@ -1414,21 +1434,21 @@ html {
 
 .owl-carousel .owl-dots {
   position: absolute;
-  top: -30px; }
-
-.owl-carousel .owl-dots {
-  position: absolute;
-  top: -35px; }
+  top: -6vh; }
 .owl-carousel .owl-dot {
   display: inline-block;
   margin: 0 5px; }
   .owl-carousel .owl-dot button {
-    padding: 3px;
-    font-size: 17px;
+    padding: 1px;
+    font-size: 14px;
     opacity: 0.3; }
   .owl-carousel .owl-dot.active button, .owl-carousel .owl-dot:hover button {
     opacity: 1;
     border-bottom: 1px solid #2e2e2e; }
+@media screen and (min-width: 720px) {
+  .owl-carousel .owl-dot button {
+    padding: 3px;
+    font-size: 17px; } }
 
 .fiexed-section {
   position: fixed;
@@ -1438,14 +1458,15 @@ html {
   display: block;
   width: 100vw;
   height: 100vh;
+  line-height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #000;
+  background-color: #fff;
   z-index: 100;
-  color: #fff;
+  color: #000;
   text-align: center;
-  font-size: 30px; }
+  font-size: 15px; }
 
 .invisible {
   position: absolute !important;

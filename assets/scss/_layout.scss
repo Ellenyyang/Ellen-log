@@ -88,7 +88,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     //justify-content: space-between;
-    font-size:14px;
+    font-size:13px;
     &:not(:first-child){
         margin-top:10px;
     }
@@ -98,7 +98,6 @@
         flex-basis:100px;
         word-break: keep-all;
         font-weight: $font-weight-ko-medium;
-        
     }
 
     dd{
@@ -107,17 +106,25 @@
         // padding-left:0;
         opacity: 0.7;
         font-weight: $font-weight-ko-light;
+        a{
+            color:#2e2e2e;
+        }
     }
 }
 
 @mixin inner {
     &{
         // min-width:960px;
-        max-width:1100px;
+        max-width:1440px;
         margin:0 auto;
         //padding:0;
     }
 }
+
+
+
+
+
 
 
 /**/
@@ -227,11 +234,11 @@ html{
         
     }
     &-header{
-        margin-bottom: 50px;
+        margin-bottom: 8vh;
     }
     &-title{
-        font-family:'Poppins' sans-serif;
-        font-size: 45px;
+        font-family:'Poppins', sans-serif;
+        font-size: 32px;
         font-weight: 200;
     }
     &-body{
@@ -260,7 +267,9 @@ html{
         
     }	
     @media screen and (min-width: 720px){
-        
+        &-title{
+            font-size: 36px;
+        }
     }
     @media screen and (min-width: 960px){
         &{
@@ -276,6 +285,9 @@ html{
         }
         &-inner{
             @include inner;
+        }
+        &-title{
+            font-size: 45px;
         }
 
         // 인트로섹션
@@ -295,6 +307,11 @@ html{
             margin-top: 0;
         }
     }	
+    @media screen and (min-width: 1521px){
+        &-inner{
+            padding:0;
+        }
+    }
 }
 #intro{}
 #portfolio{
@@ -318,9 +335,9 @@ html{
     }
 }
 #about-me{
-    .section-header{
-        margin-bottom:15px;
-    }
+    // .section-header{
+    //     margin-bottom:15px;
+    // }
 }
 #footer{
     &{
@@ -507,7 +524,7 @@ html{
         // top:50%;
         // transform:translateY(-50%);
         text-align: center;
-        width:100%;
+        width:85%;
         margin:0 auto;
         #charactor-illust{
             width:100%;
@@ -537,7 +554,7 @@ html{
         left: -35px;
         z-index:-1;
 
-        width: 150px;
+        width: 110px;
     }
     &-imgs-element4{
         bottom: 0;
@@ -625,7 +642,9 @@ html{
         }
         &-title{
             width:100%;
+            max-width: 530px;
             text-align: left;
+            margin:0;
         }
         &-imgs{
             width: 100%;
@@ -739,7 +758,7 @@ html{
             }
             .works-img-bg{
                 z-index:5;
-                width: 430px;
+                width: 400px;
                 height: 353px;
             }
             .works-img {
@@ -758,6 +777,16 @@ html{
             margin-top: 0;
         }
     }
+    @media screen and (min-width: 1281px){
+        &__img{
+            .works-img-bg{
+                width: 430px;
+            }
+        }
+        &__desc{
+            flex-basis: 60%;
+        }
+    }
 }
 
 .works{
@@ -767,13 +796,13 @@ html{
         border-bottom:1px solid rgba(65, 67, 106, 0.3);
 
         .service-name{
-            font-size:28px;
+            font-size:23px;
             font-weight: $font-weight-ko-medium;
         }
 
         .service-exp{
             margin-top: 7px;
-            font-size: 15px;
+            font-size: 13px;
             opacity: 0.7;
             font-weight: $font-weight-ko-light;
         }
@@ -792,9 +821,12 @@ html{
             word-break: keep-all;
             span{
                 margin: 0 5px;
+                i{
+                    transform: translateY(-5px);
+                }
             }
             a {
-                color:#41436a;
+                color:#2e2e2e;
             }
             a:hover{
                 color:#fff;
@@ -854,7 +886,7 @@ html{
        margin-bottom: 20px;
     }
     &__title{
-        font-family:'Poppins' sans-serif;
+        font-family:'Poppins', sans-serif;
         font-size: 28px;
         font-weight: 200;
     }
@@ -886,8 +918,8 @@ html{
                 border-top:0;
             }
             &:nth-child(3){
-                padding-top:30px;
-                margin-top:30px;
+                padding-top:5vh;
+                margin-top:5vh;
                 flex-basis: 100%;
             }
         }
@@ -917,7 +949,7 @@ html{
     &__wrap{
         display: flex;
         flex-wrap:wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     &__shape{
@@ -1257,23 +1289,20 @@ html{
 
 
 
-  .owl-carousel .owl-dots{
-    position: absolute;
-    top: -30px;
-  }
+  
 
   
 .owl-carousel{
     .owl-dots{
         position: absolute;
-        top: -35px;
+        top: -6vh;
     }
     .owl-dot{
         display:inline-block;
         margin:0 5px;
         button{
-            padding:3px;
-            font-size:17px;
+            padding:1px;
+            font-size:14px;
             opacity:0.3;
         }
         &.active, &:hover{
@@ -1283,7 +1312,20 @@ html{
             }
         }
     } 
+
+    @media screen and (min-width: 720px){
+        &{
+            .owl-dot{
+                button{
+                    padding:3px;
+                    font-size:17px;
+                }
+            } 
+        }
+    }
 }
+
+
 
 .fiexed-section{
     position: fixed;
@@ -1296,14 +1338,15 @@ html{
     display:block; 
     width:100vw; 
     height:100vh;
+    line-height: 100vh;
     position: fixed;
     top:0; 
     left:0;
-    background-color: #000; 
+    background-color: #fff; 
     z-index: 100 ;
-    color:#fff;
+    color:#000;
     text-align:center;
-    font-size:30px;
+    font-size:15px;
 
 
 
