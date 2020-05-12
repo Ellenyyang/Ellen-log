@@ -67,10 +67,10 @@
                             현재 ㈜유디아이디에서 '사이다페이' 서비스를 주력으로 작업하고 있습니다.<br/>
                             소통과 노력을 통해 더 나은 코드를 만들어 나가려고 노력합니다. 
                         </p>
-                        <a href="mailto:ellenyang512@gmail.com" class="intro-button" id="ddd">
+                        <button type="button" onclick="fnShowPop('documentPop')" class="intro-button" id="ddd">
                             <i class="xi-mail-o"></i>
                             <span>작업문의 메일 보내기</span>
-                        </a>
+                        </button>
                     </div>
                     <!-- //section-intro-header -->
                     <div class="section-intro-body">
@@ -115,7 +115,11 @@
                 </div>
             </section>
             <!-- //intro -->
+
+
+
             <section id="portfolio" class="section">
+
                 <div class="section-inner">
                     <div class="section-header">
                         <h1 class="section-title">
@@ -530,6 +534,68 @@
         </section> 
     </div>
 
+    <script>
+        //레이어팝업
+        
+        function fnShowPop(sGetName){
+        var $layer = $("#"+ sGetName);
+        $layer.addClass("on");
+            if($(window).width() <768) {
+            $("html, body").css("overflow","hidden").css("height","100%");
+            }
+        }
+        function fnHidePop(sGetName){
+        $("#"+ sGetName).removeClass("on");
+            if($(window).width() <768) {
+            $("html, body").css("overflow","auto").css("height","auto");
+            }
+        }
+
+
+
+        </script>
+
+
+    <div id="documentPop" class="pop-layer pop-files">
+        <div class="bg-dim"></div>
+        <div class="wrap-pop">
+            <div class="head-pop">
+                <h2 class="title">작업문의 메일 보내기</h2>
+                <button onclick="fnHidePop('documentPop')" class="btn-i-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+            <!-- data-email="ellenyang512@gmail.com" -->
+            <form class="gform" method="POST"
+                        action="https://script.google.com/macros/s/AKfycbyf70Bm1VHvu8ITEu0Diq8kwKS0OXKDkG_P2A8b/exec">
+
+                         <div class=" form-elements">
+                            <div class="con-pop scroll-con">
+                                
+                                    
+                                    <input type="text" id="name" name="name" placeholder="이름을 입력해주세요.">    
+                                    
+                                    <input type="text" id="message" name="message" placeholder="메시지를 입력해주세요.">   
+                                    <input type="email" id="email" name="email" placeholder="이메일을 입력해주세요.">    
+                                    
+                                
+                            </div>
+                            <div class="foot-pop">
+                                <button onclick="fnHidePop('documentPop')" class="btn btn-line-secondary">취소</button>
+                                <button type="submit" class="btn btn-primary">보내기</button>
+                            </div>
+
+                        </div>
+
+                        <div style="display:none" class="thankyou_message">
+                            메일이 성공적으로 보내졌습니다.
+                        </div>
+
+                
+            </form>
+
+           
+            
+        </div>
+    </div>
 
 
     <script src="assets/js/jquery-2.2.4.min.js"></script>
@@ -584,5 +650,10 @@
     }
 
    </script>
+
+<script data-cfasync="false" type="text/javascript"
+src="assets/js/form-submission-handler.js"></script>
+
+
 </body>
 </html>
