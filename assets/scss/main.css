@@ -1176,6 +1176,8 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 30px; }
+.favorite-item__svg2 {
+  height: 25px; }
 .favorite-item__name {
   font-family: 'Poppins' sans-serif;
   font-weight: 200;
@@ -1186,7 +1188,9 @@ html {
   .favorite-item__shape svg {
     height: 95px; }
   .favorite-item__svg {
-    height: 40px; } }
+    height: 40px; }
+  .favorite-item__svg2 {
+    height: 32px; } }
 @media screen and (min-width: 960px) {
   .favorite-item {
     margin-bottom: 0; }
@@ -1196,8 +1200,9 @@ html {
       height: 114px; }
   .favorite-item__svg {
     height: 45px; }
+  .favorite-item__svg2 {
+    height: 37px; }
   .favorite-item__name {
-    font-size: 23px;
     margin-top: 20px; } }
 
 /*test*/
@@ -1470,7 +1475,82 @@ html {
   z-index: 100;
   color: #000;
   text-align: center;
-  font-size: 15px; }
+  font-size: 15px;
+  transition: all 0.2ms ease-in-out; }
+  .load p {
+    position: absolute;
+    top: 50%;
+    /* bottom: 50%; */
+    line-height: inherit;
+    left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%, -50%); }
+  .load.hide {
+    display: none;
+    transition: all 0.2ms ease-in-out;
+    transition-delay: 6000;
+    height: 0; }
+
+/* _forms.scss */
+.form-item:not(:first-child) {
+  margin-top: 15px; }
+.form-item label {
+  display: inline-block;
+  width: 70px; }
+.form-item input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 32px;
+  line-height: 32px;
+  padding: 7px 12px;
+  border: 1px solid #d1d7d7;
+  border-radius: 4px; }
+.form-item textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 7px 12px;
+  border: 1px solid #d1d7d7;
+  border-radius: 4px;
+  min-height: 200px;
+  resize: none; }
+
+.btn {
+  display: inline-block;
+  border: 1px solid;
+  background-color: inherit;
+  color: inherit;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  vertical-align: middle; }
+  .btn-block {
+    width: 100%; }
+  .btn-md {
+    padding: 10px 20px;
+    font-size: 13px; }
+  .btn-primary {
+    border-color: #41436a;
+    background-color: #41436a;
+    color: #ffbf0b;
+    transition: all 0.2s ease-in-out; }
+    .btn-primary:hover, .btn-primary:focus {
+      border-color: #ffbf0b;
+      background-color: #ffbf0b;
+      color: #41436a;
+      transition: all 0.2s ease-in-out; }
+  .btn-secondary {
+    border-color: #ddd;
+    background-color: #ddd;
+    color: #41436a; }
+  .btn-outline {
+    background-color: #fff; }
+  .btn-outline-primary {
+    border-color: #41436a;
+    color: #41436a; }
+  .btn-outline-secondary {
+    border-color: #ddd;
+    color: #ddd; }
 
 /*** 팝업 ***/
 .pop-layer {
@@ -1736,5 +1816,62 @@ html {
   line-height: 0 !important;
   font-size: 0 !important;
   overflow: hidden !important; }
+
+.gooey {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 142px;
+  height: 40px;
+  margin: -20px 0 0 -71px;
+  background: white; }
+  .gooey .dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 15px;
+    background: #ffbf0b;
+    border-radius: 50%;
+    transform: translateX(0);
+    animation: dot 2.8s infinite; }
+  .gooey .dots {
+    transform: translateX(0);
+    margin-top: 12px;
+    margin-left: 31px;
+    animation: dots 2.8s infinite; }
+    .gooey .dots span {
+      display: block;
+      float: left;
+      width: 16px;
+      height: 16px;
+      margin-left: 16px;
+      background: #41436a;
+      border-radius: 50%; }
+
+@-moz-keyframes dot {
+  50% {
+    transform: translateX(96px); } }
+@-webkit-keyframes dot {
+  50% {
+    transform: translateX(96px); } }
+@-o-keyframes dot {
+  50% {
+    transform: translateX(96px); } }
+@keyframes dot {
+  50% {
+    transform: translateX(96px); } }
+@-moz-keyframes dots {
+  50% {
+    transform: translateX(-31px); } }
+@-webkit-keyframes dots {
+  50% {
+    transform: translateX(-31px); } }
+@-o-keyframes dots {
+  50% {
+    transform: translateX(-31px); } }
+@keyframes dots {
+  50% {
+    transform: translateX(-31px); } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* _forms.scss */
+
+.form-item{
+    &:not(:first-child){
+        margin-top: 15px;
+    }
+
+    label{
+        display: inline-block;
+        width:70px;
+    }
+    input{
+        //width: 100%;
+        width:100%;
+        box-sizing:border-box;
+        height:32px;
+        line-height: 32px;
+        padding: 7px 12px;
+        border:1px solid $border-base;
+        border-radius: 4px;
+        
+    }
+    textarea{
+        width:100%;
+        box-sizing:border-box;
+        padding: 7px 12px;
+        border:1px solid $border-base;
+        border-radius: 4px;
+        min-height: 200px;
+        resize:none;
+    }
+}
+
+
+.btn{
+    display: inline-block;
+    border:1px solid;
+    background-color: inherit;
+    color:inherit;
+    box-sizing:border-box;
+    cursor:pointer;
+    border-radius: 4px;
+    font-size:14px;
+    vertical-align: middle;
+
+    &-block{
+        width:100%;
+    }
+
+
+    &-md{
+        padding:10px 20px;
+        font-size:13px;
+    }
+
+
+    &-primary{
+        border-color: #41436a;
+        background-color: #41436a;
+        color:#ffbf0b;
+        transition: all 0.2s ease-in-out;
+
+        &:hover,
+        &:focus{
+            border-color: #ffbf0b;
+            background-color: #ffbf0b;
+            color:#41436a;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+    &-secondary{
+        border-color: #ddd;
+        background-color: #ddd;
+        color:#41436a;
+    }
+
+    &-outline{
+        background-color: #fff;
+    }
+    
+    &-outline-primary{
+        border-color: #41436a;
+        color:#41436a;
+    }
+    &-outline-secondary{
+        border-color: #ddd;
+        color:#ddd;
+    }
+
+    //ffbf0b
+}

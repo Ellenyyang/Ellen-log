@@ -5,13 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/fullpage.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/fullpage.min.css"> -->
     <link rel="stylesheet" href="assets/scss/main.css">
     <title>웹퍼블리셔 양경배 포트폴리오</title>
 </head>
 <body>
-    <div class="load">
-        페이지 로딩중입니다.
+
+    
+    <script>
+        window.onload = function(){
+            
+    
+            //$(".load").addClass('hide').delay(9000);
+            //$(".loaded").show();
+            loadStopTime.stop().delay(9000);
+            loadTime.play();
+            time01.play();
+            //time02.play();
+        }
+
+    </script>
+
+
+    <div class="load ">
+        <div class="gooey">
+            <span class="dot"></span>
+            <div class="dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <p>페이지 로딩중입니다</p>
     </div>
 
     <div class="loaded">
@@ -425,7 +450,7 @@
                                                     </defs>
                                                     <path id="다각형" class="cls-2" d="M112.835,50.335c-1.39,20.873-19.744,50.93-34.856,58.785-18.138,9.43-36.862,5.6-49.794-2.5C12.776,96.962,1.8,78.861.8,61.592c-0.965-16.621,9.567-28.04,24.9-40.024C40.864,9.711,61.233.265,74.245,0.305,97.8,0.378,114.175,30.219,112.835,50.335Z"/>
                                                 </svg>
-                                                <img class="favorite-item__svg" src="assets/img/icon-favorite-2.svg" alt="" />
+                                                <img class="favorite-item__svg favorite-item__svg2" src="assets/img/icon-favorite-2.svg" alt="" />
                                             </div>
                                             <p class="favorite-item__name">coffee</p>
                                         </div>
@@ -566,28 +591,35 @@
             <!-- data-email="ellenyang512@gmail.com" -->
             <form class="gform" method="POST"
                         action="https://script.google.com/macros/s/AKfycbyf70Bm1VHvu8ITEu0Diq8kwKS0OXKDkG_P2A8b/exec">
+                <!--input 태그의 id는 honeypot 등 실제 작동하지 않는 id여야 합니다-->
+                <label class="invisible">Keep this field blank</label>
+                <input id="honeypot" type="hidden" name="honeypot" value="" />
+                
 
-                         <div class=" form-elements">
-                            <div class="con-pop scroll-con">
-                                
-                                    
-                                    <input type="text" id="name" name="name" placeholder="이름을 입력해주세요.">    
-                                    
-                                    <input type="text" id="message" name="message" placeholder="메시지를 입력해주세요.">   
-                                    <input type="email" id="email" name="email" placeholder="이메일을 입력해주세요.">    
-                                    
-                                
-                            </div>
-                            <div class="foot-pop">
-                                <button onclick="fnHidePop('documentPop')" class="btn btn-line-secondary">취소</button>
-                                <button type="submit" class="btn btn-primary">보내기</button>
-                            </div>
-
+                <div class=" form-elements">
+                    <div class="con-pop scroll-con">
+                        <div class="form-item">
+                            <label for="name">이름</label>
+                            <input type="text" id="name" name="name" placeholder="이름을 입력해주세요." required />
                         </div>
-
-                        <div style="display:none" class="thankyou_message">
-                            메일이 성공적으로 보내졌습니다.
+                        <div class="form-item">
+                            <label for="email">이메일</label>
+                            <input type="text" id="email" name="email" placeholder="이메일을 입력해주세요." required />   
                         </div>
+                        <div class="form-item">
+                            <label for="message">메시지</label>
+                            <textarea id="message" name="message" maxlength="200" placeholder="메시지를 입력해주세요." required></textarea>   
+                        </div> 
+                    </div>
+                    <div class="foot-pop">
+                        <button onclick="fnHidePop('documentPop')" class="btn btn-md btn-secondary">취소</button>
+                        <button type="submit" class="btn btn-md btn-primary">보내기</button>
+                    </div>
+                </div>
+
+                <div style="display:none" class="thankyou_message">
+                    메일이 성공적으로 보내졌습니다.
+                </div>
 
                 
             </form>
@@ -601,6 +633,10 @@
     <script src="assets/js/jquery-2.2.4.min.js"></script>
     <script src="assets/js/vivus.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/plugins/animation.gsap.min.js"></script>
+    <script src="assets/js/test.js"></script>
+
 	<!-- <script src="assets/js/TweenMax.min.js"></script>
     <script src='assets/js/scrollMagic.min.js'></script>
     <script src='assets/js/plugins/debug.addIndicators.min.js'></script>
@@ -636,20 +672,9 @@
     // var animation = new Vivus('svg-intro-title2', { type: 'oneByOne', duration: 200, start: 'autostart', dashGap: 50 });
    
    </script>
-   <script src="assets/js/test.js"></script>
+   <!-- <script src="assets/js/test.js"></script> -->
 
-   <script>
-    window.onload = function(){
-        
-
-        $(".load").hide().delay(7000);
-        //$(".loaded").show();
-
-        time01.play();
-        time02.play();
-    }
-
-   </script>
+   
 
 <script data-cfasync="false" type="text/javascript"
 src="assets/js/form-submission-handler.js"></script>

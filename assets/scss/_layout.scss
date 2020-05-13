@@ -966,6 +966,9 @@ html{
         transform: translate(-50%, -50%);
         height:30px;
     }
+    &__svg2{
+        height:25px;
+    }
 
     &__name{
         font-family:'Poppins' sans-serif;
@@ -988,6 +991,9 @@ html{
         &__svg{
             height:40px;
         }
+        &__svg2{
+            height:32px;
+        }
     }
     @media screen and (min-width: 960px){
         &{
@@ -1003,9 +1009,12 @@ html{
         &__svg{
             height:45px;
         }
+        &__svg2{
+            height:37px;
+        }
     
         &__name{
-            font-size:23px;
+            //font-size:23px;
             margin-top:20px;
         }
     }
@@ -1347,10 +1356,25 @@ html{
     color:#000;
     text-align:center;
     font-size:15px;
+    transition: all 0.2ms ease-in-out; 
+    
 
+    p{
+        position: absolute;
+        top: 50%;
+        /* bottom: 50%; */
+        line-height: inherit;
+        left: 50%;
+        margin-top: 50px;
+        transform: translate(-50%, -50%);
+    }
 
-
-
+    &.hide{
+        display:none;
+        transition: all 0.2ms ease-in-out; 
+        transition-delay: 6000;
+        height:0;
+    }
 }
 
   
