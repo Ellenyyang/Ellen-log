@@ -225,6 +225,7 @@ html{
     
     &.section-auto-height{
         height:auto;
+        min-height: auto;
     }
 
     &-inner{
@@ -278,7 +279,7 @@ html{
             position:relative;
             overflow: hidden;
             width:100vw;
-            height: 100vh;
+            min-height: 100vh;
             display:flex;
             align-items: center;
             // position: absolute;
@@ -1413,3 +1414,99 @@ html{
 }
 
   
+
+
+
+#intro {
+    position: relative !important;
+    background: #fff;
+    //background-image: linear-gradient(155deg, #002f62 0%, #18496a 50%, #138b89 100%);
+    padding-bottom: 180px;
+
+    #svg-wrap{
+        position: absolute;
+        bottom: -10px;
+        // width: 100%;
+        // height: auto;
+        // position: relative;
+        width:100%;
+        height: 400px;
+        z-index: 5000;
+
+        #svg1{
+            position: absolute;
+            width: 100%;
+            height: auto;
+            bottom: -5px;
+        }
+        #svg2{
+            position: absolute;
+            width: 100%;
+            height: auto;
+            bottom: -13px;
+        }
+        #svg3{
+            position: absolute;
+            width: 100%;
+            height: auto;
+            bottom: -19px;
+        }
+    }
+//   #svg {
+//     position: absolute;
+//     bottom: -10px;
+//     width: 100%;
+//     height: auto;
+
+//     #svg-line1{
+//         position: absolute;
+//         bottom: -10px;
+//         width: 100%;
+//         height: auto;
+//     }
+//     #svg-line2{
+//         position: absolute;
+//         bottom: -10px;
+//         width: 100%;
+//         height: auto;
+//     }
+//   }
+}
+
+
+.svg-bg-before {
+    width: 100%;
+	height: 80vh;
+	background: #5B9EBF;
+	background: linear-gradient(to right, #6d81b9, #00e5d0);
+	background-position: center;
+	position: relative;
+    overflow: hidden;
+    position: absolute;
+	top: 0;
+    left: 0;
+    z-index:50;
+}
+
+.svg-container {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	
+	svg {
+		display: block;
+
+		path {
+			fill: #fff;
+			
+			&#curve1 {
+				opacity: .6;
+			}
+			
+			&#curve2 {
+				opacity: .4;
+			}
+		}
+	}
+}

@@ -1,3 +1,4 @@
+
 // dialog show and hide function
 function fnShowPop(sGetName){
       var $layer = $("#"+ sGetName);
