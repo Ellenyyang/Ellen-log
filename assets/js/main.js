@@ -1,3 +1,18 @@
+// dialog show and hide function
+function fnShowPop(sGetName){
+      var $layer = $("#"+ sGetName);
+      $layer.addClass("on");
+      if($(window).width() <768) {
+            $("html, body").css("overflow","hidden").css("height","100%");
+      }
+}
+function fnHidePop(sGetName){
+      $("#"+ sGetName).removeClass("on");
+      if($(window).width() <768) {
+            $("html, body").css("overflow","auto").css("height","auto");
+      }
+}
+
 // green sock version 2
 var loadStopTime = new TimelineMax({paused:true});
 loadStopTime.from( ".load", 1, { opacity:0, ease:Power4.easeOut, autoAlpha: 0});

@@ -5,31 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/fullpage.min.css"> -->
     <link rel="stylesheet" href="assets/scss/main.css">
     <title>웹퍼블리셔 양경배 포트폴리오</title>
 </head>
 <body>
-
-    
     <script>
         window.onload = function(){
-            
-    
-            //$(".load").addClass('hide').delay(9000);
-            //$(".loaded").show();
-
             loadStopTime.stop().delay(9000);
             loadTime.play();
             time01.play();
-            
-            //time02.play();
         }
-
     </script>
 
-
-    <div class="load ">
+    <div class="load">
         <div class="gooey">
             <span class="dot"></span>
             <div class="dots">
@@ -37,10 +25,9 @@
               <span></span>
               <span></span>
             </div>
-          </div>
-          <p>페이지 로딩중입니다</p>
+        </div>
+        <p>페이지 로딩중입니다</p>
     </div>
-
     <div class="loaded">
         <!-- fullpage -->
         <section id="" class="">
@@ -143,10 +130,7 @@
             </section>
             <!-- //intro -->
 
-
-
             <section id="portfolio" class="section">
-
                 <div class="section-inner">
                     <div class="section-header">
                         <h1 class="section-title">
@@ -561,43 +545,21 @@
         </section> 
     </div>
 
-    <script>
-        //레이어팝업
-        
-        function fnShowPop(sGetName){
-        var $layer = $("#"+ sGetName);
-        $layer.addClass("on");
-            if($(window).width() <768) {
-            $("html, body").css("overflow","hidden").css("height","100%");
-            }
-        }
-        function fnHidePop(sGetName){
-        $("#"+ sGetName).removeClass("on");
-            if($(window).width() <768) {
-            $("html, body").css("overflow","auto").css("height","auto");
-            }
-        }
-
-
-
-        </script>
-
-
-    <div id="documentPop" class="pop-layer pop-files">
+    <div id="documentPop" class="pop-layer">
         <div class="bg-dim"></div>
         <div class="wrap-pop">
             <div class="head-pop">
                 <h2 class="title">작업문의 메일 보내기</h2>
-                <button onclick="fnHidePop('documentPop')" class="btn-i-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <button onclick="fnHidePop('documentPop')" class="btn-i-close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
             </div>
-            <!-- data-email="ellenyang512@gmail.com" -->
             <form class="gform" method="POST"
-                        action="https://script.google.com/macros/s/AKfycbyf70Bm1VHvu8ITEu0Diq8kwKS0OXKDkG_P2A8b/exec">
+                action="https://script.google.com/macros/s/AKfycbyf70Bm1VHvu8ITEu0Diq8kwKS0OXKDkG_P2A8b/exec">
                 <!--input 태그의 id는 honeypot 등 실제 작동하지 않는 id여야 합니다-->
                 <label class="invisible">Keep this field blank</label>
                 <input id="honeypot" type="hidden" name="honeypot" value="" />
                 
-
                 <div class=" form-elements">
                     <div class="con-pop scroll-con">
                         <div class="form-item">
@@ -622,39 +584,16 @@
                 <div style="display:none" class="thankyou_message">
                     메일이 성공적으로 보내졌습니다.
                 </div>
-
-                
             </form>
-
-           
-            
         </div>
     </div>
-
 
     <script src="assets/js/jquery-2.2.4.min.js"></script>
     <!-- <script src="assets/js/vivus.min.js"></script> -->
     <script src="assets/js/owl.carousel.min.js"></script>
-
     <script src="assets/js/TweenMax.min.js"></script>
     <script src="assets/js/plugins/animation.gsap.min.js"></script>
     <script src="assets/js/main.js"></script>
-
-    
-
-    <!-- <script>
-     
-    //페이지 로드시 자바스크립트 실행
-    window.onload = pageLoad();
-    function pageLoad(){
-        // document.getElementById("myDiv").style.backgroundColor="green";
-        // alert("ddd");
-        // let elm = document.getElementsByTagName('body');
-        // elm.classList.add('load');
-    
-    };
-    </script> -->
-
     <script>
         $('.owl-carousel').owlCarousel({
         loop:true,
@@ -666,23 +605,6 @@
         //paginationNumbers: true,
     })
     </script>
-
-   <!-- <script>
-    var animation = new Vivus('svg-intro-title2', { 
-        type: 'oneByOne', 
-        duration: 200, 
-        start: 'autostart', 
-        dashGap: 50 
-    }); -->
-   
-   </script>
-   <!-- <script src="assets/js/test.js"></script> -->
-
-   
-
-<script data-cfasync="false" type="text/javascript"
-src="assets/js/form-submission-handler.js"></script>
-
-
+    <script data-cfasync="false" type="text/javascript" src="assets/js/form-submission-handler.js"></script>
 </body>
 </html>
