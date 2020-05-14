@@ -18,9 +18,11 @@
     
             //$(".load").addClass('hide').delay(9000);
             //$(".loaded").show();
+
             loadStopTime.stop().delay(9000);
             loadTime.play();
             time01.play();
+            
             //time02.play();
         }
 
@@ -612,7 +614,7 @@
                         </div> 
                     </div>
                     <div class="foot-pop">
-                        <button onclick="fnHidePop('documentPop')" class="btn btn-md btn-secondary">취소</button>
+                        <button type="button" onclick="fnHidePop('documentPop')" class="btn btn-md btn-secondary">취소</button>
                         <button type="submit" class="btn btn-md btn-primary">보내기</button>
                     </div>
                 </div>
@@ -631,16 +633,13 @@
 
 
     <script src="assets/js/jquery-2.2.4.min.js"></script>
-    <script src="assets/js/vivus.min.js"></script>
+    <!-- <script src="assets/js/vivus.min.js"></script> -->
     <script src="assets/js/owl.carousel.min.js"></script>
+
     <script src="assets/js/TweenMax.min.js"></script>
     <script src="assets/js/plugins/animation.gsap.min.js"></script>
-    <script src="assets/js/test.js"></script>
+    <script src="assets/js/main.js"></script>
 
-	<!-- <script src="assets/js/TweenMax.min.js"></script>
-    <script src='assets/js/scrollMagic.min.js'></script>
-    <script src='assets/js/plugins/debug.addIndicators.min.js'></script>
-    <script src="assets/js/plugins/animation.gsap.min.js"></script> -->
     
 
     <!-- <script>
@@ -668,8 +667,13 @@
     })
     </script>
 
-   <script>
-    // var animation = new Vivus('svg-intro-title2', { type: 'oneByOne', duration: 200, start: 'autostart', dashGap: 50 });
+   <!-- <script>
+    var animation = new Vivus('svg-intro-title2', { 
+        type: 'oneByOne', 
+        duration: 200, 
+        start: 'autostart', 
+        dashGap: 50 
+    }); -->
    
    </script>
    <!-- <script src="assets/js/test.js"></script> -->

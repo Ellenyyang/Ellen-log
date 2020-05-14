@@ -20,10 +20,10 @@
 }
 .wrap-pop .head-pop {
     position:relative; padding:15px 20px;
-    background-color:#1e2f3a
+    // background-color:#1e2f3a
 }
 .wrap-pop .head-pop .title {
-    font-size:13px; font-weight:500; color:#fff
+    font-size:15px; font-weight:500; color:#41436a;
 }
 .wrap-pop .btn-i-close {
     position:absolute; right:15px; top:8px;
@@ -40,7 +40,7 @@
 .wrap-pop .btn-i-close:before {transform:rotate(-45deg)}
 .wrap-pop .btn-i-close:after {transform:rotate(45deg)}*/
 .wrap-pop .con-pop {
-    position:relative; padding:30px 20px
+    position:relative; padding:30px 20px; padding-top:0;
 }
 .wrap-pop .con-pop .txt-opt {margin-bottom:5px}
 .wrap-pop .con-pop section {margin-bottom:20px}
