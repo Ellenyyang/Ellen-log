@@ -792,7 +792,11 @@ html {
     padding: 0; } }
 
 #portfolio {
-  background-color: #ffbf0b; }
+  background-color: #ffbf0b;
+  height: 90vh;
+  width: 100vw;
+  background-image: #ffbf0b;
+  clip-path: ellipse(100% 55% at 48% 44%); }
   #portfolio .bg-element {
     position: absolute;
     bottom: -20%;
@@ -860,7 +864,7 @@ html {
     .intro-title span:first-child {
       max-width: 100%; }
     .intro-title span:last-child {
-      max-width: 90%;
+      max-width: 87%;
       margin: 0 auto; }
   .intro-title .hi {
     color: #fff;
@@ -881,7 +885,8 @@ html {
   background-color: #41436a;
   border-radius: 50em; }
 .intro-imgs__wrap {
-  position: relative; }
+  position: relative;
+  z-index: 10; }
 .intro-imgs {
   position: relative;
   text-align: center;
@@ -983,7 +988,8 @@ html {
   height: 100%; }
 .portfolio-content__img {
   position: relative;
-  text-align: center; }
+  text-align: center;
+  background-color: #ffbf0b; }
   .portfolio-content__img .ph {
     fill: #ffd560;
     fill-rule: evenodd; }
@@ -1004,7 +1010,6 @@ html {
     top: 50%;
     transform: translate(-50%, -50%); }
 .portfolio-content__desc {
-  background-color: #ffbf0b;
   margin-top: 50px; }
 @media screen and (min-width: 720px) {
   .portfolio-content__img .works-img-bg {
@@ -1511,12 +1516,13 @@ html {
 #intro {
   position: relative !important;
   background: #fff;
-  padding-bottom: 180px; }
+  padding-bottom: 180px;
+  padding-bottom: 80px; }
   #intro #svg-wrap {
     position: absolute;
     bottom: -10px;
+    bottom: 10.5px;
     width: 100%;
-    height: 400px;
     z-index: 5000; }
     #intro #svg-wrap #svg1 {
       position: absolute;
@@ -1533,33 +1539,19 @@ html {
       width: 100%;
       height: auto;
       bottom: -19px; }
-
-.svg-bg-before {
-  width: 100%;
-  height: 80vh;
-  background: #5B9EBF;
-  background: linear-gradient(to right, #6d81b9, #00e5d0);
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 50; }
-
-.svg-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%; }
-  .svg-container svg {
-    display: block; }
-    .svg-container svg path {
-      fill: #fff; }
-      .svg-container svg path#curve1 {
-        opacity: .6; }
-      .svg-container svg path#curve2 {
-        opacity: .4; }
+  @media screen and (min-width: 540px) {
+    #intro #svg-wrap {
+      bottom: 8px; } }
+  @media screen and (min-width: 720px) {
+    #intro {
+      padding-bottom: 125px; }
+      #intro #svg-wrap {
+        bottom: 4px; } }
+  @media screen and (min-width: 960px) {
+    #intro {
+      padding-bottom: 180px; }
+      #intro #svg-wrap {
+        bottom: -5px; } }
 
 /* _forms.scss */
 .form-item:not(:first-child) {

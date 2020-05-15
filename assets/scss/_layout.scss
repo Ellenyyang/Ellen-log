@@ -317,6 +317,14 @@ html{
 #intro{}
 #portfolio{
     background-color: #ffbf0b;
+
+    
+    height: 90vh;
+    width: 100vw;
+    background-image: #ffbf0b;
+    clip-path: ellipse(100% 55% at 48% 44%);
+    
+
     // &:before{
     //     content:"";
     //     display: block;
@@ -469,7 +477,7 @@ html{
                     max-width: 100%;
                 }
                 &:last-child{
-                    max-width: 90%;
+                    max-width: 87%;
                     margin:0 auto;
                 }
             
@@ -527,6 +535,7 @@ html{
     }
     &-imgs__wrap{
         position:relative;
+        z-index: 10;
     }
     &-imgs{
         position:relative;
@@ -719,6 +728,7 @@ html{
         // flex-basis: 50%;
         // min-height: 353px;
         text-align:center;
+        background-color: #ffbf0b;
         
         .ph {
             fill: #ffd560;
@@ -756,7 +766,7 @@ html{
 
     &__desc{
         // flex-basis: 50%;
-        background-color:#ffbf0b;
+        //background-color:#ffbf0b;
         margin-top:50px;
     }
 
@@ -1422,15 +1432,15 @@ html{
     background: #fff;
     //background-image: linear-gradient(155deg, #002f62 0%, #18496a 50%, #138b89 100%);
     padding-bottom: 180px;
+    padding-bottom: 80px;
 
     #svg-wrap{
         position: absolute;
         bottom: -10px;
-        // width: 100%;
-        // height: auto;
-        // position: relative;
+        bottom: 10.5px;
+       
         width:100%;
-        height: 400px;
+        // height: 400px;
         z-index: 5000;
 
         #svg1{
@@ -1452,61 +1462,34 @@ html{
             bottom: -19px;
         }
     }
-//   #svg {
-//     position: absolute;
-//     bottom: -10px;
-//     width: 100%;
-//     height: auto;
 
-//     #svg-line1{
-//         position: absolute;
-//         bottom: -10px;
-//         width: 100%;
-//         height: auto;
-//     }
-//     #svg-line2{
-//         position: absolute;
-//         bottom: -10px;
-//         width: 100%;
-//         height: auto;
-//     }
-//   }
+    @media screen and (min-width: 540px){
+        &{
+            #svg-wrap{
+                bottom: 8px;
+            }
+        }
+    }	
+    @media screen and (min-width: 720px){
+        &{
+            padding-bottom: 125px;
+
+            #svg-wrap{
+                bottom: 4px;
+            }
+        }
+        
+    }
+    @media screen and (min-width: 960px){
+        &{
+            padding-bottom: 180px;
+
+            #svg-wrap{
+                bottom: -5px;
+        
+               
+            }
+        }
+    }	
 }
 
-
-.svg-bg-before {
-    width: 100%;
-	height: 80vh;
-	background: #5B9EBF;
-	background: linear-gradient(to right, #6d81b9, #00e5d0);
-	background-position: center;
-	position: relative;
-    overflow: hidden;
-    position: absolute;
-	top: 0;
-    left: 0;
-    z-index:50;
-}
-
-.svg-container {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	
-	svg {
-		display: block;
-
-		path {
-			fill: #fff;
-			
-			&#curve1 {
-				opacity: .6;
-			}
-			
-			&#curve2 {
-				opacity: .4;
-			}
-		}
-	}
-}
