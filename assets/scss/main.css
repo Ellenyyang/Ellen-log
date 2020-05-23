@@ -793,10 +793,8 @@ html {
 
 #portfolio {
   background-color: #ffbf0b;
-  height: 90vh;
   width: 100vw;
-  background-image: #ffbf0b;
-  clip-path: ellipse(100% 55% at 48% 44%); }
+  background-image: #ffbf0b; }
   #portfolio .bg-element {
     position: absolute;
     bottom: -20%;
@@ -804,6 +802,9 @@ html {
     #portfolio .bg-element img {
       width: 100%;
       opacity: 0.7; }
+  @media screen and (min-width: 960px) {
+    #portfolio {
+      clip-path: ellipse(100% 55% at 48% 44%); } }
 
 #about-me .section-header {
   margin-bottom: 3vh; }
@@ -1494,7 +1495,7 @@ html {
   top: 0;
   left: 0;
   background-color: #fff;
-  z-index: 100;
+  z-index: 10000;
   color: #000;
   text-align: center;
   font-size: 15px;
@@ -1523,7 +1524,7 @@ html {
     bottom: -10px;
     bottom: 10.5px;
     width: 100%;
-    z-index: 5000; }
+    z-index: 99; }
     #intro #svg-wrap #svg1 {
       position: absolute;
       width: 100%;
