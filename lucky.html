@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/scss/main.css">
+    <title>럭키모먼트 : 웹퍼블리셔 양경배</title>
+</head>
+<body>
+
+    <div class="" style="width:500px; padding:15px; background-color: #e7e7e7; border:1px soldi #d7d7d7; border-radius: 10px;">
+        <strong>*옵션*</strong><br/>
+        -갤러리(공통 무료) - 기본은 박스형(클릭시 라이트박스 ) / 옵션추가시 슬라이더 라이트박스<br/>
+        -지도연결(공통 무료) v <br/>
+        -전화연결하기 / 문자보내기(공통 무료) v <br/>
+        -SNS공유(공통 무료) - 카카오톡, 페이스북, 인스타그램 <br/>
+        -디데이 표시(공통 무료) v <br/>
+        -방명록/메세지 남기기  (+3,000원)<br/>
+        -배경음악  (+3,000원) v <br/>
+        -꽃잎, 눈꽃 모션 (+3,000원) <br/>
+        -영상 (+5,000원)<br/>
+    </div>
+
+
+
+
+    <p style="font-size:15px;color:red">지도 api 연결</p>
+    <div>
+        <!-- * 카카오맵 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+        <div id="daumRoughmapContainer1590202522577" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <!--
+            2. 설치 스크립트
+            * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+        -->
+        <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+            new daum.roughmap.Lander({
+                "timestamp" : "1590202522577",
+                "key" : "yi2f",
+                "mapWidth" : "640",
+                "mapHeight" : "360"
+            }).render();
+        </script>
+    </div>
+    <br/><br/>
+    <p style="font-size:15px;color:red">전화연결/문자보내기</p>
+    <div class="">
+        <a href="tel:01012345678">전화걸기</a>
+        <a href="sms:01012345678">문자보내기</a>
+    </div>
+    <br/><br/>
+    <p style="font-size:15px;color:red">디데이표시</p>
+    <div id="d-day"></div>
+
+    <br/><br/>
+    <p style="font-size:15px;color:red">배경음악</p>
+    <div>
+        <button type="button" onClick="audio.play();" value="PLAY">
+            <i class="xi-volume-up"></i>
+        </button>
+        <button type="button" onClick="audio.pause();" value="PAUSE">
+            <i class="xi-volume-off"></i>
+        </button>
+        <input type="number" onChange="audio.currentTime=this.value"/>
+        <input type="number" onChange="audio.volume=this.value"/>
+    </div>
+
+
+
+
+
+
+
+
+    
+
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+
+    <script type="text/javascript">
+
+        // Audio 객체생성 ①
+        // var audio = new Audio('./lucky.mp3');
+    
+        // Audio 객체생성 ②
+        var audio = new Audio();
+        audio.src = "assets/file/eutti-cat-tycoon.mp3";
+        audio.play();
+    </script>
+
+    <script>
+        //디데이 종료 일자 설정
+        var countDownDate = new Date("Jun 30, 2020 06:00:00").getTime(); 
+        
+        //1초마다 갱신되도록 함수 생성,실행 
+        var x = setInterval(function() { 
+            // 오늘 날짜 등록 
+            var now = new Date().getTime(); 
+            // 종료일자에서 현재일자를 뺀 시간 
+            var distance = countDownDate - now; 
+            // 각 변수에 일, 시, 분, 초를 등록 
+            var day = Math.floor(distance / (1000 * 60 * 60 * 24)); 
+            // var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); 
+            // var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); 
+            // var s = Math.floor((distance % (1000 * 60)) / 1000); 
+            
+            //id가 d-day인 HTML코드에 내용 삽입 
+            document.getElementById("d-day").innerHTML = "D-" + day;
+        });
+    </script>
+</body>
+</html>
