@@ -1,0 +1,47 @@
+<template>
+    <div>
+        <p>Detail - ellen</p>
+         <p>{{data.writer}}</p>
+         <p>{{data.title}}</p>
+          <p>{{data.content}}</p>
+
+          <button type="button" @click="updateData">수정</button>
+          <button type="button" @click="deleteData">삭제</button>
+
+
+       
+
+    </div>
+</template>
+
+<script>
+import data from '@/data'
+
+export default {
+    name: 'Detail',
+    data() {
+        const index = this.$route.params.contentId;
+        return{
+            data: data[index],
+            index: index,
+        }
+    },
+    methods: {
+        deleteData() {
+            data.splice(this.index, 1);
+            this.$router.push({
+                path: '/'
+            })
+        },
+        updateData() {
+                this.$router.push({
+                name: 'Create',
+                params: {
+                    contentId:  this.index
+                } 
+            })
+        }
+    }
+
+}
+</script>
